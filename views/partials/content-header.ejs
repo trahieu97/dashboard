@@ -7,9 +7,9 @@
         </h1>
         <ol class="breadcrumb">
             <li><a href="/"><i class="fa fa-dashboard"></i>Dashboard</a></li>
-            <% if (breadcrumb[0].path) { %>
+            <% if (breadcrumb[0]) { %>
                 <li><a href="<%=breadcrumb[0].path %>"><%=breadcrumb[0].name %></a></li>
-                <% if (breadcrumb[1].path) { %>
+                <% if (breadcrumb[1]) { %>
                     <li class="active"><%=breadcrumb[1].name %></li>
                 <% } else { %>
                     <li class="active"><%= headerTitle %></li>

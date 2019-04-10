@@ -11,6 +11,6 @@ exports.getBreadcrumb = function (req) {
             return breadcrumbArr;
         }
     }
-    
+    console.log(breadcrumbArr)
     return breadcrumbArr;
 }
